@@ -1,4 +1,6 @@
-birth_year = int(input("Enter your birth year:"))
-current_year = 2026
-age = current_year - birth_year
-print("Your age is:", age)
+num1 = int(input("Enter first number:"))
+num2 = int(input("Enter second number:"))
+if num1 == num2:
+  print("Both numbers are equal:")
+else:
+  print("Both numbers are not equal:")

@@ -1,5 +1,5 @@
-num1 = int(input("Enter First Number:"))
-num2 = int(input("Enter Second Number:"))
-
-sum = num1 + num2
-print("sum =" , sum)
+num = int(input("Enter a number: "))
+if num % 2 == 0:
+  print("The number is Even")
+else:
+  print("The number is odd")

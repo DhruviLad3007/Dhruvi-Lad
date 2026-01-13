@@ -1,4 +1,6 @@
-num1 = float(input("Enter first number:" ))
-num2 = float(input("Enter second number:" ))
-average = (num1 + num2) / 2
-print("The average of the two numbers is:", average)
+age = int(input("Enter a age:"))
+marks = int(input("Enter a marks:"))
+if (age >=18 and marks >=40) or marks >=90:
+  print("Eligible")
+else:
+  print("Not Eligible")

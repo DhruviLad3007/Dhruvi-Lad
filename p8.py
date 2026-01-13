@@ -1,5 +1,4 @@
-num = float(input("Enter a number: "))
-if num > 0:
- print("The number is Positive.")
-elif num < 0:
- print("The number is Negative.")
+num_str = input("Enter a number:")
+num_int = int(num_str)
+result = num_int * 10
+print("Result", result)
