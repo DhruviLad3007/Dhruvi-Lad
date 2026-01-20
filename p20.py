@@ -1,3 +1,3 @@
-numbers = [1, 2, 3, 2, 4, 2, 3]
-count= numbers.count(2)
-print("2 appears", count, "times")
+my_list = [1,2,2,3,4,4,5]
+unique_set = set(my_list)
+print(unique_set)

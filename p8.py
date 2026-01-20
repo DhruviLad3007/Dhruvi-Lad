@@ -1,3 +1,7 @@
-name = input("Enter a name:")
-age = int(input("Enter a age:"))
-print(f"My name is {name} and I am {age} years old.")
+students = {
+    "Dhruvi": 85,
+    "Riya": 78,
+    "Ruchi": 92
+}
+reversed_dict = {value: key for key, value in students.items()}
+print(reversed_dict)

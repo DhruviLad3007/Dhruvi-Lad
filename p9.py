@@ -1,2 +1,7 @@
-s = input("Enter a string with spaces:")
-print("After strip:", s.strip())
+students = {
+    "Dhruvi": 85,
+    "Riya": 78,
+    "Ruchi": 92
+}
+students["Dhruvi"] = 95
+print(students)

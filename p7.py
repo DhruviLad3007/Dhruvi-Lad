@@ -1,6 +1,7 @@
-sentence = input("Enter a sentence:")
-word = input("Enter word to search:")
-if word in sentence:
-    print("Word is present:")
-else:
-    print("Word is not present:")
+students = {
+    "Dhruvi": 85,
+    "Riya": 78,
+    "Ruchi": 92
+}
+max_key = max(students, key=students.get)
+print("Key with max value:", max_key)

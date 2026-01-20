@@ -1,3 +1,4 @@
-movies = ["Total Dhamaal", "Phir hera pheri", "Bhagam bhag", "Hungama", "De dana dan"]
-last_element = movies[-1]
-print(last_element)
+set1 = {1,2,3,4}
+set2 = {3,4,5,6}
+intersection_set = set1.intersection(set2)
+print(intersection_set)

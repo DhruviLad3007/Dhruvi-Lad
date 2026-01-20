@@ -1,3 +1,2 @@
-movies = ["Total Dhamaal", "Phir hera pheri", "Bhagam bhag", "Hungama", "De dana dan"]
-movies.append("KGF")
-print(movies)
+numbers = (10, 20, 30, 40, 50)
+print(numbers[2])

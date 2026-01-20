@@ -1,2 +1,2 @@
-movies = ("Total Dhamaal", "Phir hera pheri", "Bhagam bhag", "Hungama", "De dana dan")
-print("Favourite movies:", movies)
+numbers = (10, 20, 30, 40, 50)
+print(numbers)

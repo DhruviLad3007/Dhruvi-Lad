@@ -1,2 +1,6 @@
-s = input("Enter a string:")
-print("length:", len(s))
+students = {
+    "Dhruvi": 85,
+    "Riya": 78,
+    "Ruchi": 92
+}
+print(students)
