@@ -1,3 +1,6 @@
-num = float(input("Enter a float number:"))
-result = int(num)
-print("integer value:", result)
+sentence = input("Enter a sentence:")
+word = input("Enter word to search:")
+if word in sentence:
+    print("Word is present:")
+else:
+    print("Word is not present:")

@@ -1,5 +1,7 @@
-num = int(input("Enter a number:"))
-square = num ** 2
-cube = num ** 3
-print("square:", square)
-print("cube:", cube)
+s = input("Enter a string:")
+
+if len(s) > 0:
+    print("First character:", s[0])
+    print("Second character:", s[-1])
+else:
+    print("string is empty:")

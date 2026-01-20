@@ -1,6 +1,3 @@
-num1 = int(input("Enter first number:"))
-num2 = int(input("Enter second number:"))
-if num1 > 0 and num2 > 0:
-    print("true")
-else:
-    print("False")
+s = input("Enter a string:")
+ch = input("Enter a character to count:")
+print("Count:" , s.count(ch))

@@ -1,4 +1,2 @@
-a = int(input("Enter first number: "))
-b = int(input("Enter Second number: "))
-remainder = a % b
-print("Remainder", remainder)
+s = input("Enter a string:")
+print("length:", len(s))
