@@ -1,8 +1,7 @@
-num = int(input("Enter a number: "))
-
-if num > 0:
-    print("Positive")
-elif num < 0:
-    print("Negative")
-else:
-    print("Zero")
+try:
+    f = open("data.txt", "r")
+    print(f.read())
+except FileNotFoundError:
+    print("File not found")
+finally:
+    print("Program ended")

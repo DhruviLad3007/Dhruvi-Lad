@@ -1,6 +1,10 @@
-num = int(input("Enter a number: "))
+class InvalidAgeError(Exception):
+    pass
 
-if 10 <= num <= 50:
-    print("Number is within the range")
-else:
-    print("Number is outside the range")
+try:
+    age = int(input("Enter age: "))
+    if age < 18:
+        raise InvalidAgeError("Age must be 18 or above")
+    print("Access granted")
+except InvalidAgeError as e:
+    print(e)

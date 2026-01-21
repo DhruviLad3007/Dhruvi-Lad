@@ -1,10 +1,10 @@
-units = int(input("Enter units consumed: "))
-
-if units <= 100:
-    bill = units * 2
-elif units <= 200:
-    bill = units * 3
-else:
-    bill = units * 5
-
-print("Electricity Bill:", bill)
+try:
+    a = int(input("Enter first number: "))
+    b = int(input("Enter second number: "))
+    print("Result:", a / b)
+except ValueError:
+    print("Invalid input")
+except ZeroDivisionError:
+    print("Division by zero error")
+except Exception as e:
+    print("Error:", e)

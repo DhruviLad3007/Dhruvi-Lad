@@ -1,14 +1,8 @@
-a = int(input("Enter first number: "))
-b = int(input("Enter second number: "))
-op = input("Enter operator (+, -, *, /): ")
-
-if op == "+":
-    print(a + b)
-elif op == "-":
-    print(a - b)
-elif op == "*":
-    print(a * b)
-elif op == "/":
-    print(a / b)
-else:
-    print("Invalid operator")
+try:
+    x = int(input("Enter number: "))
+    y = int(input("Enter number: "))
+    print(x / y)
+except Exception as e:
+    file = open("error_log.txt", "a")
+    file.write(str(e) + "\n")
+    file.close()

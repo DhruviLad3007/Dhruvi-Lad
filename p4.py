@@ -1,7 +1,8 @@
-balance = 5000
-withdraw = int(input("Enter withdrawal amount: "))
-
-if withdraw <= balance:
-    print("Withdrawal successful")
-else:
-    print("Insufficient balance")
+try:
+    x = int(input("Enter a number: "))
+    y = int(input("Enter another number: "))
+    print(x / y)
+except ValueError:
+    print("Error: Invalid input")
+except ZeroDivisionError:
+    print("Error: Cannot divide by zero")
