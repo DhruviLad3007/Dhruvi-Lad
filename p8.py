@@ -1,13 +1,11 @@
-file1 = open("file1.txt", "r")
-file2 = open("file2.txt", "r")
+class Laptop:
+    def __init__(self, price):
+        self.price = price
 
-data = file1.read() + "\n" + file2.read()
+    def apply_discount(self, percent):
+        self.price -= self.price * percent / 100
 
-file1.close()
-file2.close()
 
-file3 = open("merged.txt", "w")
-file3.write(data)
-file3.close()
-
-print("Files merged successfully")
+l = Laptop(60000)
+l.apply_discount(10)
+print("Final Price:", l.price)

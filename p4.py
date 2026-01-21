@@ -1,8 +1,14 @@
-file = open("sample.txt", "w")
+class Rectangle:
+    def __init__(self, length, width):
+       self.length = length
+       self.width = width
 
-for i in range(1, 6):
-    sentence = input(f"Enter sentence {i}: ")
-    file.write(sentence + "\n")
+    def area(self):
+        return self.length * self.width
 
-file.close()
-print("Data written successfully")
+    def perimeter(self):
+        return 2 * (self.length + self.width)
+
+r = Rectangle(10,5)
+print("Area:", r.area())
+print("Perimeter:", r.perimeter())

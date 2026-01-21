@@ -1,13 +1,10 @@
-with open("sample.txt", "r") as file:
-    words = file.read().split()
+class Student:
+    def __init__(self, marks):
+        self.marks = marks
 
-word_count = {}
+    def average(self):
+        return sum(self.marks) / len(self.marks)
 
-for word in words:
-    if word in word_count:
-        word_count[word] += 1
-    else:
-        word_count[word] = 1
 
-for word, count in word_count.items():
-    print(word, ":", count)
+s = Student([80, 90, 85])
+print("Average Marks:", s.average())

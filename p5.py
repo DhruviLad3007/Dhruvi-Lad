@@ -1,8 +1,12 @@
-items = ["Python", "Java", "C++"]
+class Employee:
+    def __init__(self, name, salary):
+        self.name = name
+        self.salary = salary
 
-file = open("sample.txt", "a")
-for item in items:
-    file.write(item + "\n")
-file.close()
+    def display(self):
+        print("Name:", self.name)
+        print("Salary:", self.salary)
 
-print("Data appended successfully")
+
+e = Employee("Rahul", 30000)
+e.display()

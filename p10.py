@@ -1,9 +1,15 @@
-source = open("sample.txt", "r")
-backup = open("backup.txt", "w")
+class Shop:
+    def __init__(self):
+        self.products = []
 
-backup.write(source.read())
+    def add_product(self, product):
+        self.products.append(product)
 
-source.close()
-backup.close()
+    def list_products(self):
+        print(self.products)
 
-print("Backup created successfully")
+
+s = Shop()
+s.add_product("Laptop")
+s.add_product("Mobile")
+s.list_products()

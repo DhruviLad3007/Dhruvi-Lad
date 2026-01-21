@@ -1,15 +1,16 @@
-old_word = input("Enter old word: ")
-new_word = input("Enter new word: ")
+import math
 
-file = open("sample.txt", "r")
-content = file.read()
-file.close()
+class Circle:
+    def __init__(self, radius):
+        self.radius = radius
 
-content = content.replace(old_word, new_word)
+    def area(self):
+        return math.pi * self.radius ** 2
 
-file = open("sample.txt", "w")
-file.write(content)
-file.close()
+    def circumference(self):
+        return 2 * math.pi * self.radius
 
-print("Word replaced successfully")
 
+c = Circle(7)
+print("Area:", c.area())
+print("Circumference:", c.circumference())

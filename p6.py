@@ -1,7 +1,12 @@
-search_word = input("Enter word to search: ")
+class Book:
+    def __init__(self, title, author, price):
+        self.title = title
+        self.author = author
+        self.price = price
 
-file = open("sample.txt", "r")
-for line in file:
-    if search_word in line:
-        print(line.strip())
-file.close()
+    def display(self):
+        print(self.title, self.author, self.price)
+
+
+b = Book("Python", "Guido", 500)
+b.display()
