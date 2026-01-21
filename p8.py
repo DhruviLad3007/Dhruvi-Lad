@@ -1,20 +1,5 @@
-class Person:
-    def info(self):
-        print("I am a person")
+import random
 
-class Teacher(Person):
-    def role(self):
-        print("I am a Teacher")
-
-class Student(Person):
-    def role(self):
-        print("I am a Student")
-
-t = Teacher()
-s = Student()
-
-t.info()
-t.role()
-
-s.info()
-s.role()
+lst = [1, 2, 3, 4, 5]
+random.shuffle(lst)
+print(lst)

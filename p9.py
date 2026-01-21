@@ -1,10 +1,7 @@
-class MusicPlayer:
-    def play(self):
-        print("Playing music")
+from datetime import date
 
-class Spotify(MusicPlayer):
-    def play(self):
-        print("Playing music on Spotify")
+d1 = date(2025, 1, 1)
+d2 = date(2025, 1, 21)
 
-m = Spotify()
-m.play()
+difference = d2 - d1
+print("Difference in days:", difference.days)

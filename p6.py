@@ -1,17 +1,5 @@
-class BankAccount:
-    def __init__(self, balance):
-        self.balance = balance
+from shapes.circle import area as circle_area
+from shapes.rectangle import area as rectangle_area
 
-class SavingsAccount(BankAccount):
-    def account_type(self):
-        print("Savings Account Balance:", self.balance)
-
-class CurrentAccount(BankAccount):
-    def account_type(self):
-        print("Current Account Balance:", self.balance)
-
-s = SavingsAccount(5000)
-c = CurrentAccount(10000)
-
-s.account_type()
-c.account_type()
+print(circle_area(5))
+print(rectangle_area(4, 6))

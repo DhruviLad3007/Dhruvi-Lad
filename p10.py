@@ -1,10 +1,7 @@
-class Animal:
-    def __init__(self):
-        print("Animal created")
+import os
 
-class Dog(Animal):
-    def __init__(self):
-        super().__init__()
-        print("Dog created")
+path = "."   # current directory
+files = os.listdir(path)
 
-d = Dog()
+for file in files:
+    print(file)

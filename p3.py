@@ -1,10 +1,4 @@
-class Parent:
-    def show(self):
-        print("This is Parent class")
+import random
 
-class Child(Parent):
-    def show(self):
-        print("This is Child class")
-
-obj = Child()
-obj.show()
+numbers = [random.randint(1, 100) for _ in range(5)]
+print(numbers)

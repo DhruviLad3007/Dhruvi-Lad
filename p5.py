@@ -1,13 +1,4 @@
-class Circle:
-    def draw(self):
-        print("Drawing Circle")
+import math
 
-class Square:
-    def draw(self):
-        print("Drawing Square")
-
-def draw_shape(shape):
-    shape.draw()
-
-draw_shape(Circle())
-draw_shape(Square())
+num = int(input("Enter a number: "))
+print("Factorial:", math.factorial(num))
