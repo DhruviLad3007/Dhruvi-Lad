@@ -1,12 +1,17 @@
-class Book:
-    def __init__(self, title, author, price):
-        self.title = title
-        self.author = author
-        self.price = price
+class BankAccount:
+    def __init__(self, balance):
+        self.balance = balance
 
-    def display(self):
-        print(self.title, self.author, self.price)
+class SavingsAccount(BankAccount):
+    def account_type(self):
+        print("Savings Account Balance:", self.balance)
 
+class CurrentAccount(BankAccount):
+    def account_type(self):
+        print("Current Account Balance:", self.balance)
 
-b = Book("Python", "Guido", 500)
-b.display()
+s = SavingsAccount(5000)
+c = CurrentAccount(10000)
+
+s.account_type()
+c.account_type()

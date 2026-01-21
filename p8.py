@@ -1,11 +1,20 @@
-class Laptop:
-    def __init__(self, price):
-        self.price = price
+class Person:
+    def info(self):
+        print("I am a person")
 
-    def apply_discount(self, percent):
-        self.price -= self.price * percent / 100
+class Teacher(Person):
+    def role(self):
+        print("I am a Teacher")
 
+class Student(Person):
+    def role(self):
+        print("I am a Student")
 
-l = Laptop(60000)
-l.apply_discount(10)
-print("Final Price:", l.price)
+t = Teacher()
+s = Student()
+
+t.info()
+t.role()
+
+s.info()
+s.role()

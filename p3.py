@@ -1,10 +1,10 @@
-class Student:
-    def __init__(self, marks):
-        self.marks = marks
+class Parent:
+    def show(self):
+        print("This is Parent class")
 
-    def average(self):
-        return sum(self.marks) / len(self.marks)
+class Child(Parent):
+    def show(self):
+        print("This is Child class")
 
-
-s = Student([80, 90, 85])
-print("Average Marks:", s.average())
+obj = Child()
+obj.show()

@@ -1,21 +1,16 @@
-class BankAccount:
-    def __init__(self, balance=0):
-        self.balance = balance
+class Vehicle:
+    def start(self):
+        print("Vehicle started")
 
-    def deposit(self, amount):
-        self.balance += amount
+class Car(Vehicle):
+    def drive(self):
+        print("Car is driving")
 
-    def withdraw(self, amount):
-        if amount <= self.balance:
-            self.balance -= amount
-        else:
-            print("Insufficient Balance")
+class ElectricCar(Car):
+    def charge(self):
+        print("Electric car is charging")
 
-    def display(self):
-        print("Balance:", self.balance)
-
-
-acc = BankAccount(1000)
-acc.deposit(500)
-acc.withdraw(300)
-acc.display()
+e = ElectricCar()
+e.start()
+e.drive()
+e.charge()

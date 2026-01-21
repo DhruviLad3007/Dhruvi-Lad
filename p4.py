@@ -1,14 +1,14 @@
-class Rectangle:
-    def __init__(self, length, width):
-       self.length = length
-       self.width = width
+class Father:
+    def skill1(self):
+        print("Gardening")
 
-    def area(self):
-        return self.length * self.width
+class Mother:
+    def skill2(self):
+        print("Cooking")
 
-    def perimeter(self):
-        return 2 * (self.length + self.width)
+class Child(Father, Mother):
+    pass
 
-r = Rectangle(10,5)
-print("Area:", r.area())
-print("Perimeter:", r.perimeter())
+c = Child()
+c.skill1()
+c.skill2()

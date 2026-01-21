@@ -1,20 +1,17 @@
-class Car:
-    def __init__(self, brand, model, speed=0):
-        self.brand = brand
-        self.model = model
-        self.speed = speed
+class Animal:
+    def speak(self):
+        print("Animal makes a sound")
 
-    def accelerate(self, value):
-        self.speed += value
+class Dog(Animal):
+    def speak(self):
+        print("Dog barks")
 
-    def brake(self, value):
-        self.speed -= value
+class Cat(Animal):
+    def speak(self):
+        print("Cat meows")
 
-    def display(self):
-        print(self.brand, self.model, "Speed:", self.speed)
+d = Dog()
+c = Cat()
 
-
-c = Car("Honda", "City")
-c.accelerate(20)
-c.brake(5)
-c.display()
+d.speak()
+c.speak()

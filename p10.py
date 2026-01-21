@@ -1,15 +1,10 @@
-class Shop:
+class Animal:
     def __init__(self):
-        self.products = []
+        print("Animal created")
 
-    def add_product(self, product):
-        self.products.append(product)
+class Dog(Animal):
+    def __init__(self):
+        super().__init__()
+        print("Dog created")
 
-    def list_products(self):
-        print(self.products)
-
-
-s = Shop()
-s.add_product("Laptop")
-s.add_product("Mobile")
-s.list_products()
+d = Dog()

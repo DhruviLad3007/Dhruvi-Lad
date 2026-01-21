@@ -1,16 +1,15 @@
-import math
+class Person:
+    def __init__(self, name):
+        self.__name = name   # private variable
 
-class Circle:
-    def __init__(self, radius):
-        self.radius = radius
+    def get_name(self):
+        return self.__name
 
-    def area(self):
-        return math.pi * self.radius ** 2
+    def set_name(self, name):
+        self.__name = name
 
-    def circumference(self):
-        return 2 * math.pi * self.radius
+p = Person("Dhruvi")
+print(p.get_name())
 
-
-c = Circle(7)
-print("Area:", c.area())
-print("Circumference:", c.circumference())
+p.set_name("Lad")
+print(p.get_name())
