@@ -1,11 +1,11 @@
-students = {
-    "Dhruvi": 85,
-    "Riya": 78,
-    "Ruchi": 92
-}
-key = "Dhruvi"
+num = int(input("Enter a number: "))
 
-if key in students:
-    print("Key exists:")
+if num <= 1:
+    print("Not Prime")
 else:
-    print("Key does not exist:")
+    for i in range(2, num):
+        if num % i == 0:
+            print("Not Prime")
+            break
+    else:
+        print("Prime")

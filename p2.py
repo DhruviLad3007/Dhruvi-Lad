@@ -1,8 +1,4 @@
-students = {
-    "Dhruvi": 85,
-    "Riya": 78,
-    "Ruchi": 92
-}
-students["Dhruvi"] = 88
+num = int(input("Enter a number: "))
 
-print(students)
+for i in range(1, 11):
+    print(num, "x", i, "=", num * i)

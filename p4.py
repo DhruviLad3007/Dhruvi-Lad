@@ -1,4 +1,8 @@
-dict1 = {"a" : 1 , "b" : 2}
-dict2 = {"c" : 3 , "d" : 4}
-merged_dict = dict1 | dict2
-print(merged_dict)
+n = int(input("Enter N: "))
+
+a, b = 0, 1
+count = 0
+while count < n:
+    print(a, end=" ")
+    a, b = b, a + b
+    count += 1

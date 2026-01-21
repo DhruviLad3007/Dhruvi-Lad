@@ -1,7 +1,11 @@
-students = {
-    "Dhruvi": 85,
-    "Riya": 78,
-    "Ruchi": 92
-}
-max_key = max(students, key=students.get)
-print("Key with max value:", max_key)
+num = int(input("Enter a number: "))
+
+count = 0
+if num == 0:
+    count = 1
+else:
+    while num != 0:
+        num //= 10
+        count += 1
+
+print("Number of digits:", count)

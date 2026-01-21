@@ -1,6 +1,2 @@
-students = {
-    "Dhruvi": 85,
-    "Riya": 78,
-    "Ruchi": 92
-}
-print(students)
+for i in range(1, 11):
+    print(i)

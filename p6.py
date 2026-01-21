@@ -1,8 +1,9 @@
-sentence = "python is easy and python is powerful"
-words = sentence.split()
+num = int(input("Enter a number: "))
 
-freq = {}
-for word in words:
-    freq[word] = freq.get(word, 0) + 1
+reverse = 0
+while num > 0:
+    digit = num % 10
+    reverse = reverse * 10 + digit
+    num //= 10
 
-print(freq)
+print("Reversed number:", reverse)

@@ -1,7 +1,7 @@
-students = {
-    "Dhruvi": 85,
-    "Riya": 78,
-    "Ruchi": 92
-}
-reversed_dict = {value: key for key, value in students.items()}
-print(reversed_dict)
+sum_even = 0
+
+for i in range(1, 101):
+    if i % 2 == 0:
+        sum_even += i
+
+print("Sum of even numbers from 1 to 100:", sum_even)
