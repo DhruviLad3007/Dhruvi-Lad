@@ -1,5 +1,13 @@
-def factorial(n):
-    fact = 1
-    for i in range(1, n + 1):
-        fact *= i
-    return fact
+with open("sample.txt", "r") as file:
+    words = file.read().split()
+
+word_count = {}
+
+for word in words:
+    if word in word_count:
+        word_count[word] += 1
+    else:
+        word_count[word] = 1
+
+for word, count in word_count.items():
+    print(word, ":", count)

@@ -1,7 +1,7 @@
-def count_vowels(s):
-    vowels = "aeiouAEIOU"
-    count = 0
-    for char in s:
-        if char in vowels:
-            count += 1
-    return count
+search_word = input("Enter word to search: ")
+
+file = open("sample.txt", "r")
+for line in file:
+    if search_word in line:
+        print(line.strip())
+file.close()

@@ -1,5 +1,9 @@
-def is_armstrong(n):
-    digits = str(n)
-    power = len(digits)
-    total = sum(int(d)**power for d in digits)
-    return total == n
+source = open("sample.txt", "r")
+backup = open("backup.txt", "w")
+
+backup.write(source.read())
+
+source.close()
+backup.close()
+
+print("Backup created successfully")
