@@ -1,7 +1,2 @@
-try:
-    f = open("data.txt", "r")
-    print(f.read())
-except FileNotFoundError:
-    print("File not found")
-finally:
-    print("Program ended")
+def is_palindrome(word):
+    return word == word[::-1]
