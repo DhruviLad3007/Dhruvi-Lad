@@ -1,7 +1,10 @@
-num = int(input("Enter a number: "))
+light = input("Enter traffic light color (Red/Yellow/Green): ").lower()
 
-factorial = 1
-for i in range(1, num + 1):
-    factorial *= i
-
-print("Factorial of", num, "is:", factorial)
+if light == "red":
+    print("Stop")
+elif light == "yellow":
+    print("Wait")
+elif light == "green":
+    print("Go")
+else:
+    print("Invalid color")

@@ -1,11 +1,8 @@
 num = int(input("Enter a number: "))
 
-if num <= 1:
-    print("Not Prime")
+if num > 0:
+    print("Positive")
+elif num < 0:
+    print("Negative")
 else:
-    for i in range(2, num):
-        if num % i == 0:
-            print("Not Prime")
-            break
-    else:
-        print("Prime")
+    print("Zero")

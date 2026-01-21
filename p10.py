@@ -1,6 +1,10 @@
-num = int(input("Enter a number: "))
+a = int(input("Enter side 1: "))
+b = int(input("Enter side 2: "))
+c = int(input("Enter side 3: "))
 
-print("Divisors of", num, "are:")
-for i in range(1, num + 1):
-    if num % i == 0:
-        print(i)
+if a == b == c:
+    print("Equilateral triangle")
+elif a == b or b == c or a == c:
+    print("Isosceles triangle")
+else:
+    print("Scalene triangle")

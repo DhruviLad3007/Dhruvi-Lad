@@ -1,4 +1,8 @@
-num = int(input("Enter a number: "))
+marks = int(input("Enter marks: "))
 
-for i in range(1, 11):
-    print(num, "x", i, "=", num * i)
+if marks >= 90:
+    print("Grade A")
+elif marks >= 80:
+    print("Grade B")
+else:
+    print("Grade C")

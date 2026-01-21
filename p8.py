@@ -1,7 +1,10 @@
-sum_even = 0
+units = int(input("Enter units consumed: "))
 
-for i in range(1, 101):
-    if i % 2 == 0:
-        sum_even += i
+if units <= 100:
+    bill = units * 2
+elif units <= 200:
+    bill = units * 3
+else:
+    bill = units * 5
 
-print("Sum of even numbers from 1 to 100:", sum_even)
+print("Electricity Bill:", bill)

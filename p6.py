@@ -1,9 +1,6 @@
 num = int(input("Enter a number: "))
 
-reverse = 0
-while num > 0:
-    digit = num % 10
-    reverse = reverse * 10 + digit
-    num //= 10
-
-print("Reversed number:", reverse)
+if 10 <= num <= 50:
+    print("Number is within the range")
+else:
+    print("Number is outside the range")
