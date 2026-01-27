@@ -1,0 +1,1 @@
+INSERT INTO accounts VALUES (103, 'Diya', 4000);
