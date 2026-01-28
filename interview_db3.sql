@@ -1,3 +1,4 @@
+--nth highest salary
 SELECT salary
 FROM employee
 WHERE salary = (
@@ -6,3 +7,4 @@ WHERE salary = (
     ORDER BY salary DESC
     LIMIT 1 OFFSET 1
 );
+
