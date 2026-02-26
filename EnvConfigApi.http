@@ -1,0 +1,6 @@
+@EnvConfigApi_HostAddress = http://localhost:5274
+
+GET {{EnvConfigApi_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
